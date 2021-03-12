@@ -51,8 +51,11 @@ function Comment(props) {
         <div className="">
           <div className="info-comment">
             Criado em {new Date(props.comment.created).toLocaleString()} por{" "}
-            {props.comment.creator} e atualizado em{" "}
-            {new Date(props.comment.updated).toLocaleString()}
+            {props.comment.creator}{" "}
+            {props.comment.updated &&
+              `e atualizado em ${new Date(
+                props.comment.updated
+              ).toLocaleString()}`}
           </div>
           <div className="text-comment">{props.comment.text}</div>
 
