@@ -1,6 +1,6 @@
 # React Board
 
-The React Board is a simple and practical to use Kanban-style task management application using a drag-and-drop library: [react-beautiful-dnd](https://www.npmjs.com/package/react-beautiful-dnd).
+React Board is a simple and practical to use Kanban-style task management application using a drag-and-drop library: [react-beautiful-dnd](https://www.npmjs.com/package/react-beautiful-dnd).
 
 # Repositories
 
