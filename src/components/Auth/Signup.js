@@ -22,7 +22,7 @@ function Signup(props) {
     try {
       await api.post("/signup", state);
       setErrors({ name: "", password: "", email: "" });
-      props.history.push("/");
+      // props.history.push("/");
       props.handleLogin();
     } catch (err) {
       console.error(err.response);
