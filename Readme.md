@@ -11,13 +11,13 @@ React Board is a simple and practical to use Kanban-style task management applic
 
 Developed by students of Web Development, where they put their acquired skills in the course in practice of Front-end and Back-end.!
 
-## Signup now!
+## Start!
 
-- Enter the App and start managing your tasks now [Click Here](https://reactboard-front.netlify.app)!
+- Start managing your tasks now [Click Here](https://reactboard-front.netlify.app)!
 
 ## Contribution
 
-This is a free software, feel free to contribute in any way you want
+This is a free software, feel free to contribute in any way you want.
 
 ## Slides
 
