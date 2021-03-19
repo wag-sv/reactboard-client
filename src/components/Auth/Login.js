@@ -32,11 +32,11 @@ function Login(props) {
         "loggedInUser",
         JSON.stringify({ ...response.data })
       );
-      setErrors({ password: "", email: "" });
+      setErrors({ msg: "" });
       props.history.push("/board");
     } catch (err) {
-      console.error(err.response);
-      setErrors({ ...err.response.data.errors });
+      console.error(err.response.data);
+      setErrors({ ...err.response.data });
     }
   }
 
@@ -66,6 +66,7 @@ function Login(props) {
           error={errors.password}
           onChange={handleChange}
         />
+        {errors.msg && <div className="error-login"> {errors.msg}</div>}
       </div>
 
       <div className="footer-auth">

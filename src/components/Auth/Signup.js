@@ -22,10 +22,10 @@ function Signup(props) {
     try {
       await api.post("/signup", state);
       setErrors({ name: "", password: "", email: "" });
-      // props.history.push("/");
+      props.history.push("/");
       props.handleLogin();
     } catch (err) {
-      console.error(err.response);
+      console.error(err.response.data.errors);
       setErrors({ ...err.response.data.errors });
     }
   }
@@ -44,6 +44,7 @@ function Signup(props) {
           error={errors.name}
           onChange={handleChange}
         />
+        {errors.name && <div className="error"> {errors.name}</div>}
       </div>
 
       <div>
@@ -56,6 +57,7 @@ function Signup(props) {
           error={errors.email}
           onChange={handleChange}
         />
+        {errors.email && <div className="error"> {errors.email}</div>}
       </div>
 
       <div>
@@ -68,6 +70,7 @@ function Signup(props) {
           error={errors.password}
           onChange={handleChange}
         />
+        {errors.password && <div className="error"> {errors.password}</div>}
       </div>
 
       <div className="footer-auth">

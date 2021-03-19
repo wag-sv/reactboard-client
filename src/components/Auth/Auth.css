@@ -26,3 +26,16 @@ h1 {
 .redirect {
   cursor: pointer;
 }
+
+.error {
+  color: rgb(245, 102, 102);
+  font-size: smaller;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+
+.error-login {
+  color: rgb(245, 102, 102);
+  font-size: smaller;
+  margin-bottom: 20px;
+}
